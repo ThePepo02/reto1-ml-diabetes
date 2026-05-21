@@ -50,11 +50,10 @@ clasificador = DecisionTreeClassifier(max_depth=4, random_state=42)
 clasificador.fit(X_train, y_train)
 
 
-
 # Parte 6 medir la precisión del modelo
 predicciones = clasificador.predict(X_test)
 precision = accuracy_score(y_test, predicciones)
-print(f"\nPrecisión del modelo: {precision * 100:.2f}%")
+print(f"\nPrecisión del modelo: {precision * 100:.2f}%") #(2float)
 
 
 # Parte 7 - Visualizar el árbol de decisión
